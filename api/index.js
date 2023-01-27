@@ -53,7 +53,10 @@ app.post("/api/webhook", (req, res) => {
         data: {
           messaging_product: "whatsapp",
           to: from,
-          text: { body: "Ack: " + msg_body },
+          text: {
+            body:
+              "we are working on this, thanks for your interest: " + msg_body,
+          },
         },
         headers: { "Content-Type": "application/json" },
       });
