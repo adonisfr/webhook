@@ -66,7 +66,7 @@ app.post("/webhook", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Admin Homepage");
+  res.send("Homepage");
 });
 
 // Accepts GET requests at the /webhook endpoint. You need this URL to setup webhook initially.
@@ -96,3 +96,6 @@ app.get("/webhook", (req, res) => {
     }
   }
 });
+
+// Export the Express API
+module.exports = app;
